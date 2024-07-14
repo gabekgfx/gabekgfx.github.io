@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello world!</title>
+
+  <link rel="icon" type="image/x-icon" href="">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <main>
+
+
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpeg" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name">Gabryys</h1>
+
+          <p class="title">React.js, Node.js, Git, MongoDB</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Pokaż więcej</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:business.gabrys@gmail.com" class="contact-link">business.gabrys@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-05-22">July 4, 2011</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gorlice, Poland</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://discord.com/users/1204732596202901515" class="social-link" target="_blank">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/gabek_gfx/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/gabekgfx/" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+
+
+    <div class="main-content">
+
+
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>O mnie</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+
+      <article class="about  active" data-page="o mnie">
+
+        <header>
+          <h2 class="h2 article-title">O mnie</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Cześć! Jestem Gabryś (aka. gabek, gdzn, dżus), i mam 13 lat. Od dłuższego czasu jestem zafascynowany światem programowania i informatyki, a moje główne zainteresowania koncentrują się wokół tworzenia botów na Discord i projektowania ui/ux.
+          </p>
+
+          <p>
+            Odkąd poznałem świat Discorda, wciągnąłem się w tworzenie własnych botów, które pomagają ulepszać doświadczenie użytkowników na serwerach. To nie tylko moja pasja, ale również sposób na rozwijanie umiejętności programistycznych i kreatywnego myślenia.
+          </p>
+
+          <p>
+            Jestem też kreatywnym designerem ui/ux. Fascynuje mnie, jak można połączyć piękny design z funkcjonalnością, aby stworzyć strony, które zachwycają użytkowników. Projektowanie responsywnych witryn internetowych oraz aplikacji i optymalizacja ich pod kątem wydajności to dla mnie fascynujące wyzwania.
+          </p>
+
+          <p>
+            W wolnym czasie lubię czytać, może nie jestem jakimś "molem książkowym" ale codziennie poświęcam temu troche czasu. Interesuje się klimatologią, to dziedzina nauki poświęcona badaniom klimatu, zmian ocieplenia globalnego oraz wielu rzeczy ważnych dla ludzkości.
+          </p>
+        </section>
+
+
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Czym się zajmuje</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/webstie.png
+                " alt="design icon">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Projekty UI/UX</h4>
+
+                <p class="service-item-text">
+                  Sed iaculis velit quis nulla ullamcorper, et laoreet massa rhoncus. Aliquam blandit mi sed facilisis ultricies. Vestibulum laoreet maximus orci eget auctor. Donec dignissim finibus.
+                </p>
+                <br>
+                <p class="service-item-text">
+                  • Praesent euismod in justo sit.
+                </p>
+                <p class="service-item-text">
+                  • Sed condimentum, nisi vel.
+                </p>
+                <br>
+                <p class="service-item-text">
+                  Suspendisse ornare sed nunc sed dignissim. Vivamus ac egestas dui, et aliquam dui. Suspendisse eu sagittis enim. Nulla facilisi. Nunc pulvinar suscipit odio, in aliquam lectus pharetra non. Nam eu leo accumsan, tempor nisl nec, volutpat nibh. Nam quis mi.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/discord-logo.svg" alt="Web development icon">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Boty discord</h4>
+
+                <p class="service-item-text">
+                  Morbi eu massa malesuada, tincidunt nulla et, fermentum magna. Suspendisse suscipit pulvinar enim at gravida. Ut nec odio gravida erat rhoncus rhoncus. Pellentesque tincidunt pharetra enim, egestas rutrum est vestibulum sit amet. Vestibulum ac nibh eu.
+                </p>
+                <br>
+                <p class="service-item-text">
+                  • Aliquam eros nisl, tempus sed.
+                </p>
+                <p class="service-item-text">
+                  • Sed lacinia ante.
+                </p>
+                <p class="service-item-text">
+                  • Sed a laoreet elit. Maecenas.
+                </p>
+                <br>
+                <p class="service-item-text">
+                  Cras viverra lacus eu nulla vulputate, id hendrerit tortor finibus. Suspendisse non sem dolor.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Opinie</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/blank.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>unknown</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Donec commodo tempus auctor. Vivamus suscipit fermentum mi, in mollis purus efficitur non. Praesent tortor felis, blandit imperdiet gravida in, maximus ut sem. Nam dictum est vel metus laoreet dapibus. Ut luctus leo vitae velit laoreet.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/blank.png" alt="unknown" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>unknown</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores nulla distinctio porro recusandae consequuntur magni molestias, perferendis odio architecto in veniam repudiandae harum quisquam amet officiis aliquid voluptates molestiae asperiores reiciendis suscipit necessitatibus deleniti perspiciatis!
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/blank.png" alt="unknown" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>unknown</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p> 
+                    Nunc scelerisque semper dolor, auctor cursus quam vestibulum sed. Fusce in velit placerat, condimentum eros in, accumsan leo. Curabitur eu ullamcorper leo. Praesent efficitur lobortis mauris eu sagittis. Nunc iaculis viverra lorem, ut imperdiet metus. Nam.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/blank.png" alt="unknown" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" class="addon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title> </h4>
+
+              <time datetime="">Klient</time>
+
+              <div data-modal-text>
+                <p>
+
+                </p>
+              </div>
+
+            </div>
+
+            
+
+            
+
+          </section>
+
+        </div>
+
+
+
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Klienci</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="https://magicstudios.pl" target="_blank">
+                <img src="./assets/images/magicstudios.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/m2fx.png"  alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://magicstudios.pl" target="_blank">
+                <img src="./assets/images/magicstudios.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/m2fx.png"  alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://magicstudios.pl" target="_blank">
+                <img src="./assets/images/magicstudios.png" alt="client logo">
+              </a>
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Projekty UI/UX</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Boty discord</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Inne</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Projekty UI/UX</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Boty discord</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Inne</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="projekty ui/ux">
+              <a href="/magicstudios-design.html">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/magicstudios.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MagicStudios.PL</h3>
+
+                <p class="project-category">Projekty UI/UX</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="boty discord">
+              <a href="/m2fx-bot.html">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/m2fx.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">m2fx.pl</h3>
+
+                <p class="project-category">Boty discord</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="boty discord">
+              <a href="/m2fx-bot.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/muzo.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">muzo</h3>
+
+                <p class="project-category">Boty discord</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <article data-page="web1">
+
+        <header>
+          <h2 class="h2 article-title">O mnie</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Cześć! Jestem Gabryś (aka. gabek, gdzn, dżus), i mam 13 lat. Od dłuższego czasu jestem zafascynowany światem programowania i informatyki, a moje główne zainteresowania koncentrują się wokół tworzenia botów na Discord i projektowania ui/ux.
+          </p>
+          
+
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
